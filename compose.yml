@@ -30,6 +30,11 @@ services:
       - MYSQL_USER=test
       - MYSQL_PASSWORD=test
       - MYSQL_DATABASE=test_db
+      # root でアクセスする場合
+      # - MYSQL_ROOT_PASSWORD=root
+      # - MYSQL_USER=test
+      # - MYSQL_PASSWORD=test
+      # - MYSQL_DATABASE=test_db
     # 永続化させるためにローカルPCとコンテナをバインドする(DB設定の際は必ず設定する)
     volumes:
       - ./mysql/initdb.d:/docker-entrypoint-initdb.d
