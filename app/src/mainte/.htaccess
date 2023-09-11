@@ -1,4 +1,0 @@
-AuthType Basic
-AuthName "IDとパスワードを入力して下さい"
-AuthUserFile /var/www/html/mainte/.htpasswd
-require valid-user
