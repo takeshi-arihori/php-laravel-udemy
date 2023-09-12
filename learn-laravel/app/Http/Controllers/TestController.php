@@ -10,6 +10,10 @@ class TestController extends Controller
 {
     public function index()
     {
+
+        // 一旦ダミーデータを作成
+        dd('test');
+
         // Eloquent(エロクアント)を使ってデータベースから値を取得する
         $values = Test::all();
 
